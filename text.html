@@ -6,7 +6,31 @@
 
 <body>
 	<script>
-		window.alert('Hello, world!');
+		var i=1;
+		for (i=1;i<=100;i++)
+			{
+				if (i%3==0)
+				{
+					if (i%5==0)
+					{
+						document.write('fizzbuzz ');
+						continue;
+					}
+					else
+					{
+						document.write('fizz ');
+						continue;
+					}
+				}
+				
+				if (i%5==0)
+				{
+					document.write('buzz ');
+					continue;
+				}
+				
+				document.write(i, ' ');
+			}
 	</script>
 </body>
 </html>
